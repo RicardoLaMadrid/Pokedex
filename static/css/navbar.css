@@ -1,0 +1,65 @@
+
+.pokemon-navbar {
+    background: linear-gradient(135deg,#e3350d 0%, #ff0000 100%);
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.pokemon-types {
+    background: rgba(40, 40, 40, 0.95) !important;
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.dropdown-item:hover {
+    transform: translateX(10px);
+    background-color: rgba(255,255,255,0.1) !important;
+}
+
+.search-box {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.search-input {
+    background: rgba(255,255,255,0.9);
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    padding-right: 40px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+.search-input:focus {
+    background: white;
+    border-color: #ffd700;
+    box-shadow: 0 0 15px rgba(255,215,0,0.3);
+}
+
+.search-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+}
+
+.search-btn:hover {
+    color: #ff0000;
+}
+
+.nav-link {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
+}

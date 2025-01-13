@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+<nav class="navbar navbar-expand-lg pokemon-navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="/" class="nav-link text-white">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="tipos"></i> Tipos de Pokémon
+          </a>
+          <div class="dropdown-menu pokemon-types" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-light hover-effect" href="/type/normal" style="color: #A8A878 !important">NORMAL</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/fire" style="color: #F08030 !important">FUEGO</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/water" style="color: #6890F0 !important">AGUA</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/grass" style="color: #78C850 !important">PLANTA</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/electric" style="color: #F8D030 !important"></i> ELECTRICO</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/ice" style="color: #98D8D8 !important">HIELO</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/fighting" style="color: #C03028 !important">LUCHADOR</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/poison" style="color: #A040A0 !important">VENENO</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/ground" style="color: #E0C068 !important">TIERRA</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/flying" style="color: #A890F0 !important">VOLADOR</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/psychic" style="color: #F85888 !important">PSIQUICO</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/bug" style="color: #A8B820 !important">BICHO</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/rock" style="color: #B8A038 !important">ROCA</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/ghost" style="color: #705898 !important">FANTASMA</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/dark" style="color: #705848 !important">OSCURO</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/dragon" style="color: #7038F8 !important">DRAGON</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/steel" style="color: #B8B8D0 !important">ACERO</a>
+            <a class="dropdown-item text-light hover-effect" href="/type/fairy" style="color: #EE99AC !important">HADA</a>
+          </div>
+        </li>
+      </ul>
+      
+      <form class="form-inline my-2 my-lg-0" action="/search" method="GET">
+        <div class="search-box">
+          <input class="form-control mr-sm-2 search-input" type="search" placeholder="Buscar Pokémon" aria-label="Buscar" name="query">
+          <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+     
+    </div>
+</nav>
+
+<link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

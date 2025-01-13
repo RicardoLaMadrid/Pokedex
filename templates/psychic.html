@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Pokémon Tipo psiquico</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="container">
+        <h1 class="mt-5">Pokémon Tipo Psiquico</h1>
+        <div class="row">
+            {% for pokemon in pokemon_list %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="{{ pokemon.sprites.front_default }}" class="card-img-top" alt="{{ pokemon.name }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ pokemon.name | capitalize }}</h5>
+                            <p class="card-text">Height: {{ pokemon.height }}</p>
+                            <p class="card-text">Weight: {{ pokemon.weight }}</p>
+                            <p class="card-text">Base Experience: {{ pokemon.base_experience }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+   
+</body>
+</html>
